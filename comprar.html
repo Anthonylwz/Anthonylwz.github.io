@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprar - Antojitos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    /* Variables de color */
+    :root {
+      --rosa-principal: #ff0066;
+      --rosa-secundario: #ff99c2;
+      --rosa-fondo: #fff0f6;
+      --texto-oscuro: #4a1a2c;
+      --degradado: linear-gradient(45deg, #ff0066, #ff99c2);
+      --sombra: 0 4px 30px rgba(255, 0, 102, 0.15);
+    }
+    /* Reset y estilos base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--rosa-fondo);
+      color: var(--texto-oscuro);
+      padding: 2rem;
+    }
+    header {
+      background: var(--degradado);
+      padding: 1rem;
+      text-align: center;
+      color: white;
+    }
+    header a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      color: var(--rosa-principal);
+    }
+    .productos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .producto-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: var(--sombra);
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .producto-card:hover {
+      transform: translateY(-5px);
+    }
+    .producto-card img {
+      max-width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+    .producto-card h3 {
+      margin-bottom: 0.5rem;
+      color: var(--rosa-principal);
+    }
+    .producto-card p {
+      margin-bottom: 1rem;
+    }
+    .boton {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: var(--degradado);
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .boton:hover {
+      background: var(--rosa-principal);
+    }
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ccc;
+      font-size: 0.9rem;
+      color: var(--texto-oscuro);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Antojitos - Comprar</h1>
+    <nav>
+      <a href="index.html">Volver al Inicio</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- Sección de Tortas -->
+    <section id="tortas">
+      <h2 class="section-title">Tortas Especiales</h2>
+      <div class="productos-grid">
+        <div class="producto-card">
+          <img src="imagenes/chocolate.jpg" alt="Torta de Chocolate">
+          <h3>Torta de Chocolate</h3>
+          <p>Deliciosa torta de chocolate con relleno de ganache y cobertura de cacao.</p>
+          <a href="#" class="boton">Comprar</a>
+        </div>
+        <div class="producto-card">
+          <img src="imagenes/fresa.jpg" alt="Torta de Fresa">
+          <h3>Torta de Fresa</h3>
+          <p>Torta fresca con capas de bizcocho, crema batida y fresas naturales.</p>
+          <a href="#" class="boton">Comprar</a>
+        </div>
+        <div class="producto-card">
+          <img src="imagenes/vainilla.jpg" alt="Torta de Vainilla">
+          <h3>Torta de Vainilla</h3>
+          <p>Clásica torta de vainilla con un toque de esencia natural y relleno de crema.</p>
+          <a href="#" class="boton">Comprar</a>
+        </div>
+        <div class="producto-card">
+          <img src="imagenes/cumpleaños.jpg" alt="Torta Red Velvet">
+          <h3>Torta  de cumpleaños</h3>
+          <p>solo es una imagen de referencia .</p>
+          <a href="#" class="boton">Comprar</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Postres Peruanos -->
+    <section id="postres">
+      <h2 class="section-title">Postres </h2>
+      <div class="productos-grid">
+        <div class="producto-card">
+          <img src="imagenes/postres.webp" alt="Suspiro a la Limeña">
+          <h3>Suspiro a la Limeña</h3>
+          <p>Dulce tradicional peruano con una textura aterciopelada y sabor a caramelo.</p>
+          <a href="#" class="boton">Comprar</a>
+        </div>
+        <div class="producto-card">
+          <img src="imagenes/postres.webp" alt="Mazamorra Morada">
+          <h3>Mazamorra Morada</h3>
+          <p>Postre emblemático preparado con maíz morado, frutas y especias.</p>
+          <a href="#" class="boton">Comprar</a>
+        </div>
+        <div class="producto-card">
+          <img src="imagenes/postres.webp" alt="Picarones">
+          <h3>Picarones</h3>
+          <p>Buñuelos de camote crujientes, servidos con miel de chancaca.</p>
+          <a href="#" class="boton">Comprar</a>
+        </div>
+        <div class="producto-card">
+          <img src="imagenes/postres.webp" alt="Arroz con Leche">
+          <h3>Arroz con Leche</h3>
+          <p>Postre cremoso y reconfortante, ideal para disfrutar en familia.</p>
+          <a href="#" class="boton">Comprar</a>
+        </div>
+        <div class="producto-card">
+            <img src="imagenes/king kong.jpg" alt="king kong">
+            <h3>king kong</h3>
+            <p>Un alfajor gigante relleno de manjar blanco.</p>
+            <a href="#" class="boton">Comprar</a>
+          </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2024 Antojitos - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
